@@ -1,0 +1,38 @@
+@import "~susy/sass/susy";
+@import "~breakpoint-sass/stylesheets/breakpoint";
+
+$md: 858px;
+
+@mixin breakpoint-md() {
+  @include breakpoint($md) {
+    @content
+  }
+}
+
+
+@mixin left-col($is-last: false) {
+  @if $is-last == true {
+    @include span(12 of 12 last);
+  } @else {
+    @include span(6 of 12);
+  }
+}
+
+@mixin right-col() {
+  @include span(6 of 12 last);
+  text-align: right;
+}
+
+@mixin clearfix() {
+  overflow: hidden;
+  clear: both;
+}
+
+@mixin details() {
+  margin: 0.5em 0;
+  padding-left: 2em;
+}
+
+@mixin header() {
+  margin: 0.25em 0;
+}
