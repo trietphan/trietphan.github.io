@@ -1,17 +1,22 @@
 <template>
   <div class="experience">
-    <h2>Employment</h2>
-    <div class="job" v-for="job in jobs">
-      <div class="info">
-        <div class="title">{{ job.title }}</div>
-        <div class="year">{{ job.year }}</div>
-        <div class="company">{{ job.company }}</div>
-      </div>
-      <ul>
-        <li v-for="detail in job.details">{{ detail }}</li>
-      </ul>
+    <div class="col-sm-1 mid">
+      <div class="funicon fa fa-laptop"></div>
     </div>
-  </div>
+    <div class="col-sm-11">
+      <div class="mid"><h2>Employment</h2></div>
+      <div class="job" v-for="job in jobs">
+        <div class="info">
+          <div class="title"><strong>{{ job.title }}</strong></div>
+          <div class="year">{{ job.year }}</div>
+          <div class="company">{{ job.company }}</div>
+        </div>
+        <ul>
+          <li v-for="detail in job.details">{{ detail }}</li>
+        </ul>
+      </div>
+      </div>
+    </div>
 </template>
 
 <script>
@@ -42,38 +47,3 @@
   }
 </script>
 
-<style lang="sass">
-  @import "../style.scss";
-
-  @mixin info-md() {
-    .title {
-    @include left-col();
-    }
-    .year {
-    @include right-col();
-    }
-    .company {
-      @include left-col();
-    }
-  }
-
-  .experience {
-    .job {
-      .info {
-        @include clearfix();
-      .title {
-        font-style: italic;
-        font-weight: 500;
-      }
-      @include breakpoint-md() {
-        @include info-md();
-      }
-    }
-
-    ul {
-      @include clearfix()
-      @include details();
-      }
-    }
-  }
-</style>

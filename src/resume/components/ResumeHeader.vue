@@ -1,9 +1,14 @@
 <template>
   <div class="header">
-    <h1><a :href="myinfo.link">{{myinfo.name}}</a></h1>
-    <ul class="contact">
-      <li v-for="c in contacts">
-        <i :class="c.icon"></i> <a :href="c.link">{{ c.content }}</a>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-11">
+      <div class="mid"><h1 id="myname">{{myinfo.name}}</h1></div>
+      <ul class="contact">
+        <li v-for="c in contacts">
+          <i :class="c.icon"></i> <a :href="c.link">{{ c.content }}</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -45,67 +50,3 @@
   }
 </script>
 
-<style lang="sass">
-  @import "../style.scss";
-
-  $github-color: #800080;
-  $linkedin-color: #4875B4;
-  $twitter-color: #6faedc;
-
-  .fa-linkedin {
-    color: $linkedin-color;
-  }
-  .fa-github {
-    color: $github-color;
-  }
-  .fa-twitter {
-    color: $twitter-color;
-  }
-
-  @mixin contacts-li-md() {
-  &:nth-child(odd),
-  &:nth-child(even) {
-     padding: 0 0.3em;
-     width: inherit;
-     margin: 0;
-   }
-  }
-
-  @mixin contacts-ul-md() {
-    float: right;
-  }
-
-  .header {
-  @include clearfix();
-  @include container();
-
-  h1 {
-    font-size: 2em;
-    margin: 0;
-    color: #757575;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  @include breakpoint-md() {
-  @include contacts-ul-md();
-  }
-  li {
-    display: inline;
-    float: left;
-    margin: 0;
-  &:nth-child(odd) {
-   @include left-col();
-   }
-  &:nth-child(even) {
-   @include right-col();
-   }
-  @include breakpoint-md() {
-  @include contacts-li-md();
-  }
-  }
-  }
-  }
-
-</style>
