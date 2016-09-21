@@ -58,6 +58,13 @@
         margin-right: 0;
         text-align: right;
     }
+    .education .course {
+        margin-left: 0em;
+        width: 100%;
+        float: left;
+        margin-right: 0;
+        text-align: left;
+    }
 }
 
 @media (min-width: 748px) {
@@ -80,21 +87,3 @@
     }
 }
 
-@media print {
-    div.experience > .job > .info .company {
-        width: 49.15254%;
-        float: left;
-        margin-right: 1.69492%;
-    }
-    div.experience > .job > .info .title {
-        width: 49.15254%;
-        float: left;
-        margin-right: 1.69492%;
-    }
-    div.experience > .job > .info .dates {
-        width: 49.15254%;
-        float: right;
-        margin-right: 0;
-        text-align: right;
-    }
-}

@@ -10,6 +10,8 @@
       <div class="gpa">{{ s.gpa }}</div>
       <div class="name">{{ s.name }}</div>
       <div class="graduation">{{ s.graduation }}</div>
+      <div class="course"><strong>Advanced courses: </strong>{{ s.courses }}</div>
+    </div>
     </div>
   </div>
 </template>
@@ -22,7 +24,8 @@
           major: 'Co-Terminal B.Sc. in Computer Science / Master of Data Science',
           name: 'Illinois Institute of Technology',
           gpa: 'Cumulative GPA: 3.8/4.0',
-          graduation: 'Anticipated Graduation: December 2018'
+          graduation: 'Anticipated Graduation: December 2018',
+          courses: 'Discrete Structures, Data Structures and Algorithm, Database Organization, Biometrics'
         }]
       }
     }

@@ -29,7 +29,7 @@
           company: 'Computer Science Department, Illinois Institute of Technology',
           details: [
             'Assist professor in answering questions during the laboratory and grade student assignments.',
-            'Hold office hours for individual student discussion.'
+            'Hold office hours for individual student discussion or explain concepts in a small group setting.'
           ],
         }, {
           title: 'Digital Communications',

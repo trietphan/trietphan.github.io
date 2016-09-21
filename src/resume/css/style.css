@@ -12,11 +12,11 @@ body {
     margin: 81px 63px;
     border: 1px solid #a5d4fc;
     box-shadow: 2px 2px 4px #aaa;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 #myname {
-    font-family: "Computer Modern Serif";
+    /*font-family: "Computer Modern Serif";*/
     color: #757575;
 }
 
@@ -37,8 +37,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1.2em;
-
+    font-size: 1.5em;
+    margin-top: 0;
 }
 
 h4 {
@@ -78,17 +78,6 @@ li {
     color: #B29C85;
 }
 
-/*Header*/
-@media print {
-    div.header > ul {
-        float: right;
-    }
-    div.header > ul li:nth-child(odd), div.header > ul li:nth-child(even) {
-        padding: 0em 0.3em;
-        width: inherit;
-        margin: 0em;
-    }
-}
 .header {
     overflow: hidden;
     clear: both;
@@ -120,21 +109,6 @@ li {
 }
 
 /*Education*/
-@media print {
-    div.education .school-name, div.education .major {
-        margin-left: 0em;
-        width: 49.15254%;
-        float: left;
-        margin-right: 1.69492%;
-    }
-    div.education .graduation, div.education .gpa {
-        margin-left: 0em;
-        width: 49.15254%;
-        float: right;
-        margin-right: 0;
-        text-align: right;
-    }
-}
 .education {
     max-width: 100%;
     margin-left: auto;
@@ -150,7 +124,7 @@ li {
     float: right;
     margin-right: 0;
 }
-.education .graduation, .education .name, .education .gpa {
+.education .graduation, .education .name, .education .gpa, .education .course {
     margin-left: 2em;
 }
 
@@ -180,27 +154,6 @@ li {
     padding-left: 2em;
 }
 
-.technical-experience {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.technical-experience:after {
-    content: " ";
-    display: block;
-    clear: both;
-}
-
-.technical-experience .technical a {
-    text-decoration: underline;
-}
-.technical-experience .technical h3 {
-    margin: 0.25em 0;
-}
-.technical-experience .technical ul {
-    margin: 0.5em 0;
-    padding-left: 2em;
-}
 
 /*Skills*/
 .skills {
@@ -212,9 +165,4 @@ li {
     content: " ";
     display: block;
     clear: both;
-}
-
-.skills ul {
-    margin: 0.5em 0;
-    padding-left: 2em;
 }

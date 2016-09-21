@@ -28,7 +28,7 @@
       ResumeEmployment,
       ResumeEducation,
       ResumeProjects,
-      ResumeSkills
+      ResumeSkills,
     }
   }
 </script>
@@ -36,4 +36,5 @@
 <style lang="css">
   @import "./css/style.css";
   @import "./css/responsive.css";
+  @import "./css/print.css";
 </style>
