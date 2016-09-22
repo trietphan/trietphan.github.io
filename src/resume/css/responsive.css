@@ -8,7 +8,7 @@
         font-size: 11px;
         letter-spacing: 1.3px;
     }
-    #myname {
+    .myname {
         padding-left: 0px;
     }
     hr {
@@ -41,6 +41,9 @@
     }
     .header ul {
         float: right;
+    }
+    .myname {
+        text-align: left;
     }
 }
 

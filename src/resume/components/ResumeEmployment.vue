@@ -7,7 +7,7 @@
       <div class="mid"><h2>Employment</h2></div>
       <div class="job" v-for="job in jobs">
         <div class="info">
-          <div class="title"><strong>{{ job.title }}</strong></div>
+          <div class="title">{{ job.title }}</div>
           <div class="year">{{ job.year }}</div>
           <div class="company">{{ job.company }}</div>
         </div>

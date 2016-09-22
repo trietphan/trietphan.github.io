@@ -10,7 +10,7 @@
       <div class="gpa">{{ s.gpa }}</div>
       <div class="name">{{ s.name }}</div>
       <div class="graduation">{{ s.graduation }}</div>
-      <div class="course"><strong>Advanced courses: </strong>{{ s.courses }}</div>
+      <div class="course">Advanced courses: {{ s.courses }}</div>
     </div>
     </div>
   </div>

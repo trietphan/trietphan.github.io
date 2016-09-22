@@ -1,10 +1,12 @@
 /*Print*/
 @media print {
     .resume {
-        font-size: 11px;
-        max-width: 1080px;
-        padding: 5px 0px;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        max-width: 800px;
+        padding: 0px;
         border: 0px;
+        margin: 10px 5px;
         background: #fff;
         box-shadow: none;
         -webkit-box-shadow: none;
@@ -17,41 +19,21 @@
     .header ul {
         float: right;
     }
-
-    .header ul li:nth-child(odd), .header ul li:nth-child(even) {
-        padding: 0em 0.3em;
-        width: inherit;
-        margin: 0em;
+    hr {
+        margin: 9px;
     }
 
-    .experience .job .info .company {
-        width: 49.15254%;
-        float: left;
-        margin-right: 1.69492%;
-    }
-    .experience .job .info .title {
-        width: 49.15254%;
-        float: left;
-        margin-right: 1.69492%;
-    }
-    .experience .job .info .dates {
-        width: 49.15254%;
-        float: right;
-        margin-right: 0;
-        text-align: right;
+    .header li {
+        font-size: 8px;
     }
 
-    .education .name, .education .major {
-        margin-left: 0em;
-        width: 49.15254%;
-        float: left;
-        margin-right: 1.69492%;
+    .funicon.fa {
+        font-size: 18px;
+        color: #000;
+        margin-right: 10px;
     }
-    .education .graduation, .education .gpa {
-        margin-left: 0em;
-        width: 49.15254%;
-        float: right;
-        margin-right: 0;
-        text-align: right;
+
+    h2 {
+        font-size: 18px;
     }
 }

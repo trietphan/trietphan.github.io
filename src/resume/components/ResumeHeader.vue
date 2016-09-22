@@ -2,7 +2,7 @@
   <div class="header">
     <div class="col-sm-1"></div>
     <div class="col-sm-11">
-      <div class="mid"><h1 id="myname">{{myinfo.name}}</h1></div>
+      <div class="myname"><h1>{{myinfo.name}}</h1></div>
       <ul class="contact">
         <li v-for="c in contacts">
           <i :class="c.icon"></i> <a :href="c.link">{{ c.content }}</a>

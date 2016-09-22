@@ -1,7 +1,8 @@
 body {
     background: #DBD1C7;
     color: #757575;
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Neue Helvetica';
+    /*font-family: 'Alegreya Sans', sans-serif;*/
     letter-spacing: 1.4px;
     padding-bottom: 60px;
 }
@@ -15,9 +16,10 @@ body {
     font-size: 15px;
 }
 
-#myname {
-    /*font-family: "Computer Modern Serif";*/
+.myname {
+    font-family: 'Klavika';
     color: #757575;
+    text-align: center;
 }
 
 h1 {
@@ -91,10 +93,16 @@ li {
     clear: both;
 }
 
-.header ul li {
+.contact {
+    padding: 0;
+}
+
+.contact > li {
+
     display: inline;
     float: left;
     margin: 0em;
+    font-size: 13px;
 }
 .header ul li:nth-child(odd) {
     width: 39%;
