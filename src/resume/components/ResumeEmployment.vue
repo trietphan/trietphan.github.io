@@ -36,10 +36,9 @@
           year: 'October 2015 - present',
           company: "Institutional Advancement, Illinois Institute of Technology",
           details: [
-            'Report email analysis: the open rate and the click through rate. Utilize Google analytics and social media ' +
-            'insights to compile monthly web and Facebook, LinkedIn, and Twitter analytic reports and charts.',
-            'Manage the database within the NAS, and data mining initiatives. Migrated the database to external storage, ' +
-            'improved the network system’s speed up to 40%.'
+            'Data mining initiative compiles alumni\'s lists based on their region. Clean and structure the data from the Phonathon team to help eliminate bad alumni\'s information.',
+            'Utilize Google analytics and social media insights to compile monthly web and Facebook, LinkedIn, and Twitter analytic reports and charts.',
+            'Migrate the database to external storage, improved the system’s speed up to 40%.'
           ]
         }]
       }

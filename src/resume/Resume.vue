@@ -13,6 +13,9 @@
     <hr>
 
     <resume-skills></resume-skills>
+    <hr>
+
+    <resume-awards></resume-awards>
   </div>
 </template>
 
@@ -22,6 +25,7 @@
   import ResumeEducation from './components/ResumeEducation.vue'
   import ResumeProjects from './components/ResumeProjects.vue'
   import ResumeSkills from './components/ResumeSkills.vue'
+  import ResumeAwards from './components/ResumeAwards.vue'
   export default {
     components: {
       ResumeHeader,
@@ -29,6 +33,7 @@
       ResumeEducation,
       ResumeProjects,
       ResumeSkills,
+      ResumeAwards
     }
   }
 </script>

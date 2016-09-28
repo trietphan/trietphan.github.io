@@ -22,10 +22,11 @@
       return {
         schools: [{
           major: 'Co-Terminal B.Sc. in Computer Science / Master of Data Science',
-          name: 'Illinois Institute of Technology',
+          name: 'Illinois Institute of Technology, Chicago, IL',
           gpa: 'Cumulative GPA: 3.8/4.0',
           graduation: 'Anticipated Graduation: December 2018',
-          courses: 'Discrete Structures, Data Structures and Algorithm, Database Organization, Biometrics'
+          courses:
+            'Computer Organization and Assembly Language Programming, Data Structures and Algorithm, Database Organization, and Biometrics.'
         }]
       }
     }

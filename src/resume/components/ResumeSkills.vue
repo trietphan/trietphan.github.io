@@ -18,9 +18,9 @@
     data() {
       return {
         skills: [{
-          language: 'Languages: Python, JavaScript, Java, C, Swift',
+          language: 'Languages: Python, JavaScript, Java, and C.',
           technology:
-            'Technologies/Frameworks: Meteor, Kadira, AngularJS, Vue, PostgreSQL, MongoDB, Pandas HTML5, CSS3, Bootstrap, Adobe After Effects, Git, zsh, Emacs'
+            'Technologies/Frameworks: Meteor, AngularJS, Vue, PostgreSQL, MongoDB, Pandas, HTML5, CSS3, Bootstrap, Git, Adobe After Effects, zsh, and Emacs.'
         }]
       }
     }

@@ -1,8 +1,12 @@
+:root {
+    --app-primary-color: #4285f4;
+}
+
 body {
-    background: #DBD1C7;
-    color: #757575;
+    background: var(--app-primary-color);
+    background: linear-gradient(135deg, #91DFEB 0%, #007BC4 100%);
+    /*color: #757575;*/
     font-family: 'Neue Helvetica';
-    /*font-family: 'Alegreya Sans', sans-serif;*/
     letter-spacing: 1.4px;
     padding-bottom: 60px;
 }
@@ -10,7 +14,7 @@ body {
 .resume {
     background: #fff;
     padding: 70px 75px;
-    margin: 81px 63px;
+    margin: 81px 72px;
     border: 1px solid #a5d4fc;
     box-shadow: 2px 2px 4px #aaa;
     font-size: 15px;
@@ -170,6 +174,30 @@ li {
     margin-right: auto;
 }
 .skills:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/*Projects*/
+.projects {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.projects:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/*Awards*/
+.awards {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.awards:after {
     content: " ";
     display: block;
     clear: both;
