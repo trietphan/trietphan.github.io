@@ -6,11 +6,11 @@
     <div class="col-sm-11">
       <div class="mid"><h2>Education</h2></div>
     <div class="school" v-for="s in schools">
-      <div class="major">{{ s.major }}</div>
+      <div class="major"><strong>{{ s.major }}</strong></div>
       <div class="gpa">{{ s.gpa }}</div>
       <div class="name">{{ s.name }}</div>
       <div class="graduation">{{ s.graduation }}</div>
-      <div class="course">Advanced courses: {{ s.courses }}</div>
+      <div class="course"><strong>Advanced courses:</strong> {{ s.courses }}</div>
     </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
           gpa: 'Cumulative GPA: 3.8/4.0',
           graduation: 'Anticipated Graduation: December 2018',
           courses:
-            'Computer Organization and Assembly Language Programming, Data Structures and Algorithm, Database Organization, and Biometrics.'
+            'Computer Organization and Assembly Language Programming, Data Structures and Algorithm, Database Organization, Programming Languages and Translators, and Biometrics.'
         }]
       }
     }

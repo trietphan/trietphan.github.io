@@ -28,7 +28,7 @@
           year: 'August 2016 - present',
           company: 'Computer Science Department, Illinois Institute of Technology',
           details: [
-            'Assist professor in answering questions during the laboratory and grade student assignments.',
+            'Assist the professor in answering questions during the laboratory for a section of 30 students and grade student assignments.',
             'Hold office hours for individual student discussion or explain concepts in a small group setting.'
           ],
         }, {
@@ -36,7 +36,7 @@
           year: 'October 2015 - present',
           company: "Institutional Advancement, Illinois Institute of Technology",
           details: [
-            'Data mining initiative compiles alumni\'s lists based on their region. Clean and structure the data from the Phonathon team to help eliminate bad alumni\'s information.',
+            'Data mining initiative compiles alumni lists on LinkedIn based on their region. Clean and structure the data from the Phonathon team to help eliminate wrong alumni information.',
             'Utilize Google analytics and social media insights to compile monthly web and Facebook, LinkedIn, and Twitter analytic reports and charts.',
             'Migrate the database to external storage, improved the system’s speed up to 40%.'
           ]

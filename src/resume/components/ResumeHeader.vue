@@ -42,8 +42,8 @@
           link: 'https://www.facebook.com/phanminhtriet'
         }, {
           icon: 'fa fa-envelope-o',
-          content: 'trietphan85@gmail.com',
-          link: 'mailto:trietphan85@gmail.com'
+          content: 'tphan5@hawk.iit.edu',
+          link: 'mailto:tphan5@hawk.iit.edu'
         }]
       }
     }

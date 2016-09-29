@@ -1,12 +1,12 @@
 /*Print*/
 @media print {
     .resume {
-        font-size: 10px;
+        font-size: 11px;
         letter-spacing: 0.5px;
         max-width: 800px;
         padding: 0;
         border: 0;
-        margin: 35px 40px;
+        margin: 15px 15px;
         background: #fff;
         box-shadow: none;
         -webkit-box-shadow: none;
@@ -20,20 +20,31 @@
         float: right;
     }
     hr {
-        margin: 9px;
+        margin: 6px;
     }
 
-    .header li {
-        font-size: 9px;
-    }
 
     .funicon.fa {
         font-size: 18px;
         color: #000;
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     h2 {
         font-size: 18px;
+        margin-bottom: 4px;
+    }
+    .education .name, .education .major {
+        margin-left: 0em;
+        width: 56%;
+        float: left;
+        margin-right: 1%;
+    }
+    .education .graduation, .education .gpa {
+        margin-left: 0em;
+        width: 43%;
+        float: right;
+        margin-right: 0;
+        text-align: right;
     }
 }
