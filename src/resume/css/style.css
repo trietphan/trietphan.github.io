@@ -1,11 +1,6 @@
-:root {
-    --app-primary-color: #4285f4;
-}
-
 body {
-    background: var(--app-primary-color);
-    background: linear-gradient(135deg, #91DFEB 0%, #007BC4 100%);
-    /*color: #757575;*/
+    background: #eee;
+	background: linear-gradient( MidnightBlue 0%, DeepSkyBlue 50%, skyblue 75%, salmon);
     font-family: 'Neue Helvetica';
     letter-spacing: 1.4px;
     padding-bottom: 60px;
@@ -17,7 +12,7 @@ body {
     margin: 81px 72px;
     border: 1px solid #a5d4fc;
     box-shadow: 2px 2px 4px #aaa;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .myname {

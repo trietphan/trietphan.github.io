@@ -4,14 +4,14 @@
   "author": "trietphan",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "breakpoint-sass": "^2.7.0",
-    "susy": "^2.2.12",
+    "animejs": "^1.1.1",
     "vue": "^2.0.0-rc.1",
-    "vue-router": "^2.0.0-rc.5"
+    "vue-router": "^2.0.0-rc.5",
+    "vuex": "^2.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -33,7 +33,7 @@
     "sass-loader": "^4.0.2",
     "vue-loader": "^9.2.2",
     "vue-scrollbar": "^1.0.4",
-    "webpack": "^2.1.0-beta.20",
+    "webpack": "^2.1.0-beta.0",
     "webpack-dev-server": "^2.1.0-beta.0"
   }
 }

@@ -1,0 +1,141 @@
+:root { font-size: 12px; }
+@media (min-width: 350px) { :root { font-size: 16px; } }
+@media (min-width: 640px) { :root { font-size: 18px; } }
+@media (min-width: 1440px) { :root { font-size: 20px; } }
+
+.home {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    background: #18212D;
+
+}
+
+section {
+    position: relative;
+    z-index: 1;
+    width: 18.5rem;
+}
+
+.description,
+.links {
+    opacity: 0;
+    margin-bottom: 1.25rem;
+}
+
+.small {
+    font-size: .75rem;
+}
+
+/* Logo */
+
+.logo {
+    opacity: 0;
+    position: relative;
+    margin-left: -3.5rem;
+    margin-top: -8rem;
+    margin-bottom: .75rem;
+    font-size: 8px;
+}
+
+body.ready .logo {
+    opacity: 1;
+}
+
+body:not(.iOS) #lines * {
+    mix-blend-mode: lighten;
+}
+
+#fills * {
+    opacity: 0;
+    mix-blend-mode: lighten;
+}
+
+#line-i-1 {
+    transform-origin: 30em 8em;
+}
+
+.fireworks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/*Button Effect*/
+.links {
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: #19f6e8;
+}
+
+.text {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    letter-spacing: 4px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+    text-align: center;
+}
+
+a:hover {
+    color: #F2C4A0;
+    text-decoration: none;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -474;
+        stroke-width: 8px;
+    }
+    100% {
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+        stroke-width: 2px;
+    }
+}
+
+.links:hover .shape {
+    -webkit-animation: 1s draw ease-in both;
+    animation: 1s draw ease-out both;
+}
+
+@keyframes backdraw {
+    100% {
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+        stroke-width: 2px;
+    }
+    0% {
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -474;
+        stroke-width: 8px;
+    }
+}
+
+.links .shape {
+    -webkit-animation: 0.5s backdraw ease-out reverse;
+    animation: 0.5s backdraw ease-out reverse;
+}

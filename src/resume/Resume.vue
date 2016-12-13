@@ -38,7 +38,7 @@
   }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
   @import "./css/style.css";
   @import "./css/responsive.css";
   @import "./css/print.css";
