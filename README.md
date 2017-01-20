@@ -1,2 +1,2 @@
 # trietphan.github.io
-My personal website, imphan.me
+My personal website, trietphan.me
