@@ -24,21 +24,23 @@
     data() {
       return {
         jobs: [{
-          title: 'Teacher Assistant - Accelerated Introduction to Computer Science',
+          title: 'Teacher Assistant',
+          // (Accelerated Introduction to Computer Science, Object-Oriented Programming II)
           year: 'August 2016 - present',
           company: 'Computer Science Department, Illinois Institute of Technology',
           details: [
-            'Assist the professor in answering questions during the laboratory for a section of 30 students and grade student assignments.',
-            'Hold office hours for individual student discussion or explain concepts in a small group setting.'
+            'Assist the professor in answering questions during the laboratory and grade student assignments.',
+            'Hold office hours for student discussions and encourage students to explore concepts in a small group setting.'
           ],
         }, {
           title: 'Digital Communications',
           year: 'October 2015 - present',
-          company: "Institutional Advancement, Illinois Institute of Technology",
+          company: "Office of Institutional Advancement, Illinois Institute of Technology",
           details: [
-            'Data mining initiative compiles alumni lists on LinkedIn based on their region. Clean and structure the data from the Phonathon team to help eliminate wrong alumni information.',
-            'Utilize Google analytics and social media insights to compile monthly web and Facebook, LinkedIn, and Twitter analytic reports and charts.',
-            'Migrate the database to external storage, improved the system’s speed up to 40%.'
+            'Administered the IIT Alumni and the Mies Van der Rohe Society websites.',
+            'Organize and systematize the photos and videos database.',
+            'Helped the Phonathon team to categorize over 1000 alumni data and clean up the incorrect information.',
+            'Produced the Illinois Tech Giving Day 2016 Results video and compiled the social media analytic reports.',
           ]
         }]
       }

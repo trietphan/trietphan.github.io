@@ -18,12 +18,21 @@
       return {
         myinfo: {
           name: 'Triet Phan',
-          link: 'imphan.me'
+          link: 'trietphan.me'
         },
-        contacts: [{
+        contacts: [
+        // {
+        //   icon: 'fa fa-mobile',
+        //   content: '714-417-5316',
+        // },
+        {
           icon: 'fa fa-home',
-          content: 'imphan.me',
-          link: 'http://imphan.me/'
+          content: 'trietphan.me',
+          link: 'http://trietphan.me/'
+        }, {
+          icon: 'fa fa-envelope-o',
+          content: 'tphan5@hawk.iit.edu',
+          link: 'mailto:tphan5@hawk.iit.edu'
         }, {
           icon: 'fa fa-linkedin',
           content: 'trietphan',
@@ -40,10 +49,6 @@
           icon: 'fa fa-facebook',
           content: 'trietphan',
           link: 'https://www.facebook.com/phanminhtriet'
-        }, {
-          icon: 'fa fa-envelope-o',
-          content: 'tphan5@hawk.iit.edu',
-          link: 'mailto:tphan5@hawk.iit.edu'
         }]
       }
     }

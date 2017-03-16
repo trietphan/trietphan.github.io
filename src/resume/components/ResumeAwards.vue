@@ -18,8 +18,8 @@
       return {
         awards: [
           'Illinois Institute of Technology Presidential Scholarship.',
+          'Salutatorian of Wilbur Wright College for the 2014 - 2015 academic year.',
           'Phi Theta Kappa All-Illinois Academic Team Award.',
-          'Salutatorian of Wilbur Wright College for the 2014 - 2015 academic year.'
         ]
       }
     }

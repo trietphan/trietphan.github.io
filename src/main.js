@@ -5,7 +5,7 @@ import App from './App.vue'
 import Home from './home/Home.vue'
 import Resume from './resume/Resume.vue'
 
-import bg from './home/bg'
+// import bg from './home/bg'
 
 const routes = [
   {path: '/', component: Home},
@@ -20,7 +20,7 @@ const router = new VueRouter({
 
 new Vue({
   router,
-  bg,
+  // bg,
   el: '#app',
   render: h => h(App)
 })

@@ -33,22 +33,6 @@ import bgscript from './bgscript'
 })(),
 
 
-(function init() {
-  // resizeCanvas();
-  // if (window.CP) {
-  //   // CodePen's loop detection was causin' problems
-  //   // and I have no idea why, so...
-  //   window.CP.PenTimer.MAX_TIME_IN_LOOP_WO_EXIT = 6000; 
-  // }
-  console.log('Hello')
-  // window.addEventListener("resize", resizeCanvas);
-  // addClickListeners();
-  // if (!!window.location.pathname.match(/fullcpgrid/)) {
-  //   startFauxClicking();
-  // }
-  // handleInactiveUser();
-})()
-
 // function removeAnimation(animation) {
 //   var index = animations.indexOf(animation);
 //   if (index > -1) animations.splice(index, 1);

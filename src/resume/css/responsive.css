@@ -90,3 +90,18 @@
     }
 }
 
+@media (min-width: 748px) {
+    .projects .technical .project {
+        margin-left: 0em;
+        width: 69%;
+        float: left;
+        margin-right: 1%;
+    }
+    .projects .technical .time {
+        width: 30%;
+        float: right;
+        margin-right: 0;
+        text-align: right;
+    }
+}
+

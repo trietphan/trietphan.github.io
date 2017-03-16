@@ -1,8 +1,8 @@
 body {
     background: #eee;
-	background: linear-gradient( MidnightBlue 0%, DeepSkyBlue 50%, skyblue 75%, salmon);
+	background: linear-gradient( MidnightBlue 0%, DeepSkyBlue 50%, skyblue);
     font-family: 'Neue Helvetica';
-    letter-spacing: 1.4px;
+    letter-spacing: 1.2px;
     padding-bottom: 60px;
 }
 
@@ -97,7 +97,6 @@ li {
 }
 
 .contact > li {
-
     display: inline;
     float: left;
     margin: 0em;
@@ -132,7 +131,7 @@ li {
     margin-right: 0;
 }
 .education .graduation, .education .name, .education .gpa, .education .course {
-    margin-left: 2em;
+    margin-left: 1.5em;
 }
 
 /*Experiences*/
@@ -162,6 +161,32 @@ li {
 }
 
 
+/*Projects*/
+.projects {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.projects:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.projects .technical {
+    overflow: hidden;
+    clear: both;
+}
+.projects .technical .project {
+    font-size: 1em;
+    font-weight: bolder;
+}
+.projects .technical ul {
+    overflow: hidden;
+    clear: both;
+    margin: 0.5em 0;
+    padding-left: 2em;
+}
+
 /*Skills*/
 .skills {
     max-width: 100%;
@@ -174,18 +199,6 @@ li {
     clear: both;
 }
 
-/*Projects*/
-.projects {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.projects:after {
-    content: " ";
-    display: block;
-    clear: both;
-}
-
 /*Awards*/
 .awards {
     max-width: 100%;
@@ -193,6 +206,17 @@ li {
     margin-right: auto;
 }
 .awards:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.leader {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.leader:after {
     content: " ";
     display: block;
     clear: both;

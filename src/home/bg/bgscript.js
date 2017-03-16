@@ -22,6 +22,7 @@ export default {
       e.preventDefault();
       e = e.touches[0];
     }
+
     var currentColor = colorPicker.current();
     var nextColor = colorPicker.next();
     var targetR = calcPageFillRadius(e.pageX, e.pageY);
@@ -89,15 +90,16 @@ export default {
       complete: removeAnimation
     });
     animations.push(fillAnimation, rippleAnimation, particlesAnimation);
+  },
 
-  function extend(a, b){
+  extend(a, b){
     for(var key in b) {
       if(b.hasOwnProperty(key)) {
         a[key] = b[key];
       }
     }
     return a;
-  }
+  },
 
   var Circle = function(opts) {
     extend(this, opts);
@@ -118,7 +120,7 @@ export default {
     }
     ctx.closePath();
     ctx.globalAlpha = 1;
-  }
+  },
 
   var animate = anime({
     duration: Infinity,
@@ -133,13 +135,13 @@ export default {
     }
   })
 
-  var resizeCanvas = function() {
+  resizeCanvas() => {
     cW = window.innerWidth;
     cH = window.innerHeight;
     c.width = cW * devicePixelRatio;
     c.height = cH * devicePixelRatio;
     ctx.scale(devicePixelRatio, devicePixelRatio);
-  }
+  },
 
   (function init() {
     // resizeCanvas();
@@ -148,7 +150,6 @@ export default {
     //   // and I have no idea why, so...
     //   window.CP.PenTimer.MAX_TIME_IN_LOOP_WO_EXIT = 6000; 
     // }
-    console.log('Hello')
     window.addEventListener("resize", resizeCanvas);
     addClickListeners();
     if (!!window.location.pathname.match(/fullcpgrid/)) {
@@ -157,12 +158,12 @@ export default {
     handleInactiveUser();
   })();
 
-  function handleInactiveUser() {
+  handleInactiveUser() {
     var inactive = setTimeout(function(){
       fauxClick(cW/2, cH/2);
     }, 2000);
     
-    function clearInactiveTimeout() {
+    clearInactiveTimeout() {
       clearTimeout(inactive);
       document.removeEventListener("mousedown", clearInactiveTimeout);
       document.removeEventListener("touchstart", clearInactiveTimeout);
@@ -170,20 +171,19 @@ export default {
     
     document.addEventListener("mousedown", clearInactiveTimeout);
     document.addEventListener("touchstart", clearInactiveTimeout);
-  }
+  },
 
-  function startFauxClicking() {
+  startFauxClicking() {
     setTimeout(function(){
       fauxClick(anime.random( cW * .2, cW * .8), anime.random(cH * .2, cH * .8));
       startFauxClicking();
     }, anime.random(200, 900));
-  }
+  },
 
-  function fauxClick(x, y) {
+  fauxClick(x, y) {
     var fauxClick = new Event("mousedown");
     fauxClick.pageX = x;
     fauxClick.pageY = y;
     document.dispatchEvent(fauxClick);
   }
-}
 }

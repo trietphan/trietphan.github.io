@@ -3,16 +3,19 @@
     <resume-header></resume-header>
     <hr>
 
-    <resume-employment></resume-employment>
+    <resume-education></resume-education>
     <hr>
 
-    <resume-education></resume-education>
+    <resume-skills></resume-skills>
+    <hr>
+
+    <resume-employment></resume-employment>
     <hr>
 
     <resume-projects></resume-projects>
     <hr>
 
-    <resume-skills></resume-skills>
+    <resume-leadership></resume-leadership>
     <hr>
 
     <resume-awards></resume-awards>
@@ -26,6 +29,7 @@
   import ResumeProjects from './components/ResumeProjects.vue'
   import ResumeSkills from './components/ResumeSkills.vue'
   import ResumeAwards from './components/ResumeAwards.vue'
+  import ResumeLeadership from './components/ResumeLeadership.vue'
   export default {
     components: {
       ResumeHeader,
@@ -33,7 +37,8 @@
       ResumeEducation,
       ResumeProjects,
       ResumeSkills,
-      ResumeAwards
+      ResumeAwards,
+      ResumeLeadership
     }
   }
 </script>
